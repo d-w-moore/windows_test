@@ -13,6 +13,7 @@ jobs:
 
     runs-on: ubuntu-24.04
 
+    steps:
     - name: Run demo thing
       run: |
         echo "hello" |tee /tmp/thing.txt
