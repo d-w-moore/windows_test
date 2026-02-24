@@ -1,0 +1,19 @@
+# This action is based on Github's default starter workflow for Python at
+# https://github.com/actions/starter-workflows/blob/master/ci/python-package.yml
+# (C) Github, MIT License
+
+# Static type checking tests using `mypy`.
+
+name: "Python type checking"
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-24.04
+
+    - name: Run demo thing
+      run: |
+        echo "hello" |tee /tmp/thing.txt
+
